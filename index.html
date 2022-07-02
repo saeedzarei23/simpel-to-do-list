@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="simon-lee-zft-W1kVEhg-unsplash.jpg" alt="">
+  
+<header>
+    <h2 id="count" > things left to Do</h2>
+  </header>
+  <div class="circel"></div>
+  <div class="container">
+    <form id="new-todo-form">
+      <input type="text" id="todo-input">
+      <button id="addbtn" type="submit">+</button>
+    </form>
+    
+    <ul id="list">
+
+      
+    </ul>
+  </div>
+  <template id="list-item-template">
+    <li class="list-item">
+      <label class="list-item-label">
+        <input id="box" type="checkbox" data-list-item-checkbox>
+        <label id="hello" for="box"></label>
+        <span data-list-item-text></span>
+      </label>
+      <button id="removebtn" data-button-delete>Delete</button>
+    </li>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
